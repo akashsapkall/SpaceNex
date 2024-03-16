@@ -1,0 +1,215 @@
+@font-face {
+    font-family: spaceFont;
+    src: url(MBFSpace.woff2);
+ }
+ @font-face {
+    font-family: landpageFont;
+    src: url(MegatransdemoRegular-8M9B0.otf);
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.video-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+video{
+    width: 100%;
+    height: 100%;
+    display:block;
+    object-fit: cover;
+}
+nav
+{
+    background-color:transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.186);
+}
+nav p{
+    font-family: landpageFont;
+    font-weight: 700;
+    margin-left: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+nav ul{
+    /* color: white; */
+    margin-right: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li a{
+    font-family: landpageFont;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    border-radius: 5px;
+    /* color: white; */
+}
+.hide{
+    display: none;
+}
+nav li a:hover
+{
+    border: 1px solid white;
+}
+
+.verticle-nav
+{
+    z-index: 2;
+    border-left: 1px solid hsl(0, 0%, 70%);
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height:100vh;
+    background-color:transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    ul li {
+        margin: 4rem 0;
+        font-family: landpageFont;
+        font-weight: 700;
+        font-size: 1.3rem;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+    li:hover{
+        border: 1px solid white;
+    }
+}
+.main-body
+{
+    min-height: 80vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.main-body div{
+    padding: 1rem;
+    /* text-align: center; */
+    font-size: 2rem;
+    font-family: 'Space Mono', monospace;
+}
+.welcome p
+{
+    font-size: 3rem;
+    font-family: landpageFont;
+    font-weight: 700;
+}
+.explore
+{
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 8px 30px;
+    border: 2px solid white;
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+.explore:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.explore-menu
+{
+    z-index: 2;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    div {
+        border-bottom: 2px solid white;
+        width: 80%;
+        padding:1.6rem 0;
+        font-size: 1.8rem;
+        font-family: 'Space Mono', monospace;
+    }
+    .toggeler
+    {
+        font-size: 2rem;
+        font-family: 'Space Mono', monospace;
+        padding: 0.3rem 0.9rem;
+    }
+    .toggeler:hover{
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+.explore-menu div:hover
+{
+    font-size: 2rem;
+}
+@media only screen and (max-width: 832px) {
+    .show
+    {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-right: 2rem;
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .main-body div{
+        font-size: 1.5rem;
+    }
+    .welcome p
+    {
+        font-size: 2.1rem;
+    }
+    .explore
+    {
+        font-size: 1.5rem;
+    }
+    .explore:hover{
+        transform: scale(1.1);
+    }
+    .explore-menu
+    {
+        width: 50%;
+        div {
+            padding:1.6rem 0;
+            font-size: 1.5rem;
+            font-family: 'Space Mono', monospace;
+        }
+        .toggeler
+        {
+            font-size: 1.5rem;
+        }
+    }
+    .explore-menu div:hover
+    {
+    font-size: 1.7rem;
+    }
+  }
+  @media only screen and (min-width: 832px) {
+    .ver-nav{
+        display: none;
+    }
+}

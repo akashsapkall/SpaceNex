@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe SpaceNex</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #8E8371;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            /* font-family:'Space Mono', monospace; */
+        }
+        .container
+        {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .newsletter-form {
+            background-color: #AD9070;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0.5rem 0;
+            font-size: 1.6rem;
+            /* color: black; */
+        }
+        input{
+            color: black;
+            background-color: #ccc;
+            font-size: 1rem;
+            width: 350px;
+            padding: 0.7rem;
+            margin:1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #3E2723;
+            a{
+                text-decoration: none;
+                font-size: 1rem;
+            }
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4E342E;
+            transform: scale(1.05);
+        }
+        @media only screen and (max-width : 360px) {
+            input{
+            font-size: 1rem;
+            width: 300px;
+            padding: 0.6rem;
+            }
+            .newsletter-form {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <p><a href="index.html">Space Nex</a></p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="newsLetter.html">Subscribe</a></li>
+        </ul>
+        <span class="menu hide show">|||</span>
+        <span class="cross hide">\\\</span>
+    </nav>
+    <div class="ver-nav hide">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="newsLetter.html">Subscribe</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="newsletter-form">
+            <h2>Subscribe to our Newsletter</h2>
+            <form>
+                <input type="text" name="name" placeholder="Enter your full name here" required>
+                <br>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <br>
+                <button type="submit"><a href="#">Subscribe</a></button>
+            </form>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
