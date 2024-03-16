@@ -23,7 +23,7 @@ document.addEventListener('click', function(event) {
     hideNavbar();
     }
 });
-explore.addEventListener("click",()=>{
+explore.addEventListener("click",(e)=>{
     if(onceclicked){
     verMenu.classList.add("hide");
     onceclicked=false;
@@ -39,7 +39,6 @@ toggeler.addEventListener("click",()=>{
 });
 document.addEventListener('click', function(event) {
     if (verMenu && !verMenu.contains(event.target) && !explore.contains(event.target)) {
-        console.log('Hiding menu');
         verMenu.classList.add('hide');
         onceclicked = false;
     }
