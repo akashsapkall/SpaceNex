@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subscribe SpaceNex</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newsletter.css">
     <style>
         body {
             background-color: #8E8371;
@@ -62,23 +64,27 @@
             background-color: #4E342E;
             transform: scale(1.05);
         }
+@media only screen and (max-width : 832px) {
+    input{
+    font-size: 1.2rem;
+    max-width: 350px;
+    padding: 0.8rem;
+    }
         @media only screen and (max-width : 460px) {
-            input{
+        input{
             font-size: 1rem;
-            width: 300px;
+            max-width: 300px;
             padding: 0.6rem;
-            }
-            .newsletter-form {
-                padding: 0;
-            }
         }
-        @media only screen and (max-width : 832px) {
-            input{
-            font-size: 1.2rem;
-            width: 350px;
-            padding: 0.8rem;
-            }
+    }
+    @media only screen and (max-width : 390px) {
+        input{
+            font-size: 1rem;
+            max-width: 270px;
+            padding: 0.6rem;
         }
+    }
+}
     </style>
 </head>
 
